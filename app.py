@@ -10,6 +10,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     query = request.args.get("query", "latest")
+    url = f"https://newsapi.org/v2/everything?q={query}&apiKey={NEWS_API_KEY}"
 
 if __name__ == "__main__":
     app.run(debug=True)
