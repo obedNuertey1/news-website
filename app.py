@@ -13,6 +13,7 @@ def home():
     url = f"https://newsapi.org/v2/everything?q={query}&apiKey={NEWS_API_KEY}"
     response = requests.get(url)
     data = response.json()
-    
+    return data
+
 if __name__ == "__main__":
     app.run(debug=True)
