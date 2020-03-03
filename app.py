@@ -14,7 +14,7 @@ def home():
     response = requests.get(url)
     data = response.json()
     articles = data["articles"]
-    return data
+    return render_template("index.html", articles=articles)
 
 if __name__ == "__main__":
     app.run(debug=True)
