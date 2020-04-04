@@ -15,7 +15,7 @@ def home():
     data = response.json()
     articles = data["articles"]
     filtered_articles = [article for article in articles if "Yahoo" not in article["source"]["name"] and 'removed' not in article["title"].lower()]
-    return render_template("index.html", articles=articles)
+    return render_template("index.html", articles=filtered_articles)
 
 if __name__ == "__main__":
     app.run(debug=True)
