@@ -8,3 +8,10 @@ $font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 
 // @import '../node_modules/bootstrap/scss/bootstrap';
 
+body{
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
