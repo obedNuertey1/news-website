@@ -19,4 +19,13 @@ body{
     background-color: $primary-color;
     padding: 2.5px 1.5px;
     font-family: $font-family-main;
+
+    .navbar-brand{
+        color: white;
+        font-size: 2rem;
+
+        &:hover{
+            color: darken(white, 10%);
+        }
+    }
 }
