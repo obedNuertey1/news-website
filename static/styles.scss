@@ -28,4 +28,16 @@ body{
             color: darken(white, 10%);
         }
     }
+
+    .nav-link{
+        color: white;
+        &:hover{
+            color: darken(white, 10%);
+            text-decoration: underline;
+        }
+        &:active{
+            color: darken(white, 20%);
+            text-decoration: underline;
+        }
+    }
 }
