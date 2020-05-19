@@ -95,4 +95,8 @@ form{
     box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
+
+    &:hover{
+        transform: translateY(-10px);
+    }
 }
