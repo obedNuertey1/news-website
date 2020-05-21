@@ -1,7 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for
 import requests
+from dotenv import load_dotenv
+import os
 
-from config import NEWS_API_KEY
+
+# from config import NEWS_API_KEY
+
+# Load environment variables from .env file
+load_dotenv()
+
+NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
 # Create the Flask app
 app = Flask(__name__)
